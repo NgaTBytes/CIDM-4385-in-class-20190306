@@ -18,13 +18,16 @@ class PasswordInput extends Component {
 
     onPasswordChange(event){
         const password = event.target.value;
+        //this is lifting the state value to the parent
+        this.props.onPasswordInputChange(password);
 
         this.setState( () => {
-            return {
-              password
+                return {
+                    password
+                }
             }
-          }
         );
+
     }
 
     render() {
