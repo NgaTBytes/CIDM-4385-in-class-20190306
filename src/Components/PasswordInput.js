@@ -27,7 +27,6 @@ class PasswordInput extends Component {
                 }
             }
         );
-
     }
 
     render() {
