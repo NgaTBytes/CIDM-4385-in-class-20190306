@@ -25,6 +25,7 @@ class App extends Component {
       mapstyle: mapstyles[Math.floor(Math.random() * mapstyles.length)],
       pizza_place_list: [],
     };
+    
     this.getPizzaPlacesFromHereAPI = this.getPizzaPlacesFromHereAPI.bind(this);
     this.handleFormSubmission = this.handleFormSubmission.bind(this);
     this.randomizeMapStyle = this.randomizeMapStyle.bind(this);
